@@ -11,6 +11,8 @@ var session = require('express-session');
 var bcrypt = require('bcrypt');
 var saltRounds = 10;
 
+require('dotenv').config();
+
 const client = new Client({
   database: 'd37rmk4rahu9ke',
   user: 'cgzkofiejtdtnd',
