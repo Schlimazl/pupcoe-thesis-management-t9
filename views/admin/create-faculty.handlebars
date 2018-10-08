@@ -1,0 +1,52 @@
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+<div class="col-md-8 order-md-1"  >
+          <h4 class="mb-3">Add a faculty</h4>
+          <form method="post" action="/admin/insert/faculty">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="form-group">
+                <label for="firstName">First name</label>
+                <input type="text" name="firstName"class="form-control" id="firstName" placeholder="First Name"  required>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-group">
+                <label for="lastName">Last name</label>
+                <input name="lastName" type="text" class="form-control" id="lastName" placeholder="Last Name"  required>
+              </div>
+              </div>
+            </div>
+
+
+
+            <div class="mb-3">
+              <div class="form-group">
+              <label for="email">Email <span class="text-muted"></span></label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="you@example.com" required>
+            </div>
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+              <div class="form-group">
+<label class="radio-inline"><input type="radio" value="faculty" name="userType" checked>Faculty</label>&nbsp;
+<label class="radio-inline"><input type="radio" value="admin" name="userType">Admin</label>    
+  </div>
+
+  <h4 class="mb-3" style="margin-top: 20px">Log In Credentials</h4>
+              <div class="mb-3">
+                <div class="form-group">
+              <label for="password">Password <span class="text-muted"></span></label>
+              <input type="password" class="form-control" name="password" id="password"  required>
+            </div>
+              <div class="invalid-feedback">
+                Please enter a valid password.
+              </div>
+            </div>
+
+
+
+
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+                </form>

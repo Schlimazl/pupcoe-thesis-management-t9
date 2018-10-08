@@ -1,0 +1,29 @@
+ <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+          <h2>Students</h2>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>ID #</th>
+                  <th>Batch</th>
+                  <th>Section</th>
+                  <th>Adviser</th>
+
+
+                </tr>
+              </thead>
+              {{#each classList}}
+              <tbody>
+                <tr>
+                  <td>{{this.id}}</td>
+                  <td>{{this.batch}}</td>
+                  <td>{{this.section}}</td>
+                  <td>{{this.email}}</td>
+                </tr>
+              </tbody>
+              {{/each}}
+            </table>
+          </div>
+        </main>

@@ -1,0 +1,36 @@
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+<div class="col-md-8 order-md-1"  >
+          <h4 class="mb-3">Add a class</h4>
+          <form method="post" action="/admin/create/class">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="form-group">
+                <label for="batch">Batch</label>
+                <input type="text" name="batch"class="form-control" id="batch" placeholder="Enter Batch"  required>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-group">
+                <label for="section">Section</label>
+                <input name="section" type="number" class="form-control" id="section" placeholder="Enter Section"  required>
+              </div>
+              </div>
+            </div>
+
+
+  <h4 class="mb-3" style="margin-top: 20px">Adviser</h4>
+              <div class="mb-3">
+                <div class="form-group">
+        <select class="form-control" name="adviser_id" required="">
+          {{#each adviserList}}
+          <option value ="{{this.id}}">{{this.email}}</option>
+          {{/each}}
+        </select>
+            </div>
+            </div>
+
+
+
+
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+                </form>

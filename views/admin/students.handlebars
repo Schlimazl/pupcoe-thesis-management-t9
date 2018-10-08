@@ -1,0 +1,32 @@
+ <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+
+          <h2>Students</h2>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>ID #</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Student Number</th>
+                  <th>Email</th>
+                  <th>User Type</th>
+
+                </tr>
+              </thead>
+              {{#each studentList}}
+              <tbody>
+                <tr>
+                  <td>{{this.id}}</td>
+                  <td>{{this.first_name}}</td>
+                  <td>{{this.last_name}}</td>
+                  <td>{{this.student_number}}</td>
+                  <td>{{this.email}}</td>
+                  <td>{{this.user_type}}</td>
+                </tr>
+              </tbody>
+              {{/each}}
+            </table>
+          </div>
+        </main>
