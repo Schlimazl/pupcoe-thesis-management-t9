@@ -79,7 +79,7 @@ passport.deserializeUser(function(id, cb) {
 
 
 app.get('/login', function (req,res){
-    res.render('/index');
+    res.render('index');
 });
 
 app.post('/login', 
